@@ -1,24 +1,27 @@
 @import "tailwindcss";
 
     /* Animated gradient background - dark mode colors */
-    .animated-gradient {
-        background: linear-gradient(-45deg, #111827, #1e293b, #0f172a, #1e1b4b);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
-      }
-  
-      @keyframes gradient {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-  
+:root {
+  --bg-primary: transparent;        /* Baris 5 */
+  --bg-card: #ffffff;               /* Baris 6 */
+  --bg-card-hover: #f8fafc;         /* Baris 7 */
+  --border-glass: #e2e8f0;          /* Baris 8 */
+  --border-glass-hover: #cbd5e1;    /* Baris 9 */
+  --text-primary: #0f172a;          /* Baris 10 */
+  --text-secondary: #475569;        /* Baris 11 */
+  --text-tertiary: #94a3b8;         /* Baris 12 */
+  --accent-primary: #6366f1;        /* Baris 13 */
+  --accent-secondary: #4f46e5;      /* Baris 14 */
+  --accent-glow: rgba(99, 102, 241, 0.1); /* Baris 15 */
+  --emerald: #10b981;               /* Baris 16 */
+  --emerald-glow: rgba(16, 185, 129, 0.1); /* Baris 17 */
+  --red: #ef4444;                   /* Baris 18 */
+  --red-glow: rgba(239, 68, 68, 0.1); /* Baris 19 */
+  --radius: 16px;                   /* Baris 20 */
+  --radius-sm: 10px;                /* Baris 21 */
+  --radius-xs: 8px;                 /* Baris 22 */
+}
+
       /* Custom scrollbar - minimal */
       ::-webkit-scrollbar {
         width: 4px;
